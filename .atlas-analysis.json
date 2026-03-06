@@ -1,0 +1,105 @@
+{
+  "projectType": "saas",
+  "projectName": "DADDO",
+  "projectDescription": "Modern business management platform for catalog, inventory, and sales tracking with real-time analytics",
+  "theme": "palm",
+  "primaryColor": "#9333ea",
+  "lightColor": "#a855f7",
+  "darkColor": "#7c3aed",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "installation"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/catalog-management",
+              "features/product-inventory",
+              "features/sales-tracking",
+              "features/analytics-dashboard",
+              "features/user-management"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/authentication",
+              "guides/creating-products",
+              "guides/managing-sales",
+              "guides/catalog-sharing",
+              "guides/qr-codes"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-setup",
+              "configuration/deployment",
+              "configuration/customization"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["api/overview", "api/authentication"]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/users",
+              "api/products",
+              "api/categories",
+              "api/catalogs",
+              "api/sales",
+              "api/dashboard"
+            ]
+          },
+          {
+            "group": "Redux Actions",
+            "pages": [
+              "api/redux/auth-actions",
+              "api/redux/product-actions",
+              "api/redux/sales-actions",
+              "api/redux/dashboard-actions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Product catalog management with categories and variants",
+    "Real-time inventory tracking and stock control",
+    "Sales transaction recording and management",
+    "Interactive analytics dashboard with charts",
+    "QR code generation for catalog sharing",
+    "Multi-user authentication and authorization",
+    "Public catalog viewer for customers",
+    "Redux state management architecture"
+  ],
+  "publicApiSurface": [
+    "LoginUser(credentials, rememberMe)",
+    "createProduct(formData, token)",
+    "createSell(products)",
+    "createUser(userData)",
+    "updateUser(userId, userData)",
+    "getProducts()",
+    "getCategories()",
+    "getCatalog(userId)",
+    "getAllCatalogs()",
+    "getDashboard()",
+    "exportPDF()",
+    "confirmSell(sellId)",
+    "deleteProduct(productId)",
+    "editProduct(productId, formData)"
+  ]
+}
